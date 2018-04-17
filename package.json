@@ -1,6 +1,6 @@
 {
   "name": "@fintechstudios/mixpanel-browser",
-  "version": "2.20.0",
+  "version": "2.21.0",
   "description": "The un-official Mixpanel JavaScript browser client library",
   "main": "build/mixpanel.cjs.js",
   "directories": {
