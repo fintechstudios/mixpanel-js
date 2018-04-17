@@ -7,6 +7,7 @@ is available [here](https://mixpanel.com/help/reference/javascript).
 
 ## Extra features provided by this fork
 - Ability to add HTTP headers to every XHR request
+    - Add `xhr_headers: { header1: value1, header2: value2, ... }` to your config
 
 ## Preferred usage method
 Require the lib like a standard Node.js module:

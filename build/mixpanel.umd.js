@@ -2219,7 +2219,8 @@
         'disable_cookie':         false,
         'secure_cookie':          false,
         'ip':                     true,
-        'property_blacklist':     []
+        'property_blacklist':     [],
+        'xhr_headers': {} // { header: value, header2: value }
     };
 
     var DOM_LOADED = false;
@@ -3047,6 +3048,14 @@
             try {
                 var req = new XMLHttpRequest();
                 req.open('GET', url, true);
+
+                var headers = this.get_config('xhr_headers');
+                var headerNames = Object.keys(headers);
+                for (var i = 0; i < headerNames.length; i++) {
+                    var header = headerNames[i];
+                    req.setRequestHeader(header, headers[header]);
+                }
+
                 // send the mp_optout cookie
                 // withCredentials cannot be modified until after calling .open on Android and Mobile Safari
                 req.withCredentials = true;
