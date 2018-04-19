@@ -1,3 +1,9 @@
+**2.21.1** (19 Apr 2018)
+- Patched in version reference everywhere
+
+**2.21.0** (18 Apr 2018)
+- Add configuration for Custom XHR Headers
+
 **2.20.0** (6 Apr 2018)
 - Remove obsolete autotrack event count metrics
 
