@@ -1,5 +1,5 @@
 # Deprecated for now! 
-This has been merged into the upstream repo, so there is no need for it anymore!
+This has been merged into the upstream repo as of [v2.22.1](https://github.com/mixpanel/mixpanel-js/releases/tag/v2.22.1), so there is no need for it anymore!
 
 # Mixpanel JavaScript Library
 [![Build Status](https://travis-ci.org/mixpanel/mixpanel-js.svg?branch=master)](https://travis-ci.org/mixpanel/mixpanel-js)
