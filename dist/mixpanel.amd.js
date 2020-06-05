@@ -6666,7 +6666,7 @@ define(function () { 'use strict';
         data['_'] = new Date().getTime().toString();
 
         if (use_post) {
-            body_data = 'data=' + data['data'];
+            body_data = 'data=' + encodeURIComponent(data['data']);
             delete data['data'];
         }
 
